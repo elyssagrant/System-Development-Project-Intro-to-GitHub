@@ -11,21 +11,17 @@ public class AddressBook {
         this.buddy.add(buddy);
     }
 
-    public void removeBuddy(BuddyInfo buddy) {
-        for(int i = 0; i < this.buddy.size(); i++)
-        {
-            if (this.buddy.get(i) == buddy)
-            {
-                this.buddy.remove(i);
-                return;
-            }
-        }
+    public void removeBuddy(int index) {
+       if(index >= 0 && index <= buddy.size())
+       {
+           buddy.remove(index);
+       }
     }
 
     public static void main (String[] args) {
         BuddyInfo buddy =  new BuddyInfo("Tom", "Carleton", "613");
         AddressBook addressBook = new AddressBook();
         addressBook.addBuddy(buddy);
-        addressBook.removeBuddy(buddy);
+        addressBook.removeBuddy(0);
     }
 }
