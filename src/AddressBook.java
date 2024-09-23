@@ -23,5 +23,6 @@ public class AddressBook {
         AddressBook addressBook = new AddressBook();
         addressBook.addBuddy(buddy);
         addressBook.removeBuddy(0);
+        System.out.println("Branch update");
     }
 }

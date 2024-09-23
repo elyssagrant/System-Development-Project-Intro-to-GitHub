@@ -29,6 +29,7 @@ public class BuddyInfo {
         BuddyInfo buddy = new BuddyInfo("Samantha", "123 Somewhere St.", "555-123-4567");
 
         System.out.println("Hello " + buddy.getName());
+        System.out.println("BuddyInfo Branch1");
 
     }
 }
